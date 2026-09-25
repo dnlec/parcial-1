@@ -27,10 +27,7 @@ export async function createActor(input: ActorInput): Promise<Actor> {
   return data;
 }
 
-export async function updateActor(
-  id: string,
-  input: ActorInput,
-): Promise<Actor> {
+export async function updateActor( id: string, input: ActorInput): Promise<Actor> {
   const { data } = await api.put<Actor>(`/actors/${id}`, input);
   return data;
 }

@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/actors", label: "Actors" },
   { href: "/actors/new", label: "Create actor" },
+  { href: "/movies", label: "Movies" },
+  { href: "/movies/new", label: "Create movie" },
 ];
 
 export default function Nav() {
